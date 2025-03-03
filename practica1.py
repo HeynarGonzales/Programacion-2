@@ -10,7 +10,7 @@ class Punto:
     
     def coord_polares(self):
         r = math.sqrt(self.x ** 2 + self.y ** 2)
-        theta = math.atan2(self.y, self.x)  # Ángulo en radianes
+        theta = math.atan2(self.y, self.x)  # Ãngulo en radianes
         return (r, theta)
     
     def __str__(self):
