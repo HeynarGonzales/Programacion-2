@@ -6,17 +6,17 @@ class Punto:
         self.x = x
         self.y = y
 
-    # Método para obtener las coordenadas cartesianas
+    # MÃ©todo para obtener las coordenadas cartesianas
     def coord_cartesianas(self):
         print(f"Coordenadas Cartesianas: ({self.x}, {self.y})")
 
-    # Método para obtener las coordenadas polares
+    # MÃ©todo para obtener las coordenadas polares
     def coord_polares(self):
         radio = math.sqrt(self.x**2 + self.y**2)
         angulo = math.atan2(self.y, self.x)
         print(f"Coordenadas Polares: ({radio}, {math.degrees(angulo)} grados)")
 
-    # Método toString
+    # MÃ©todo toString
     def __str__(self):
         return f"Punto({self.x}, {self.y})"
 
@@ -27,13 +27,13 @@ class Linea:
         self.p1 = p1
         self.p2 = p2
 
-    # Método toString
+    # MÃ©todo toString
     def __str__(self):
         return f"Linea desde {self.p1} hasta {self.p2}"
 
-    # Método para dibujar la línea
+    # MÃ©todo para dibujar la lÃ­nea
     def dibujaLinea(self):
-        print(f"Dibujando una línea desde {self.p1} hasta {self.p2}")
+        print(f"Dibujando una lÃ­nea desde {self.p1} hasta {self.p2}")
 
 
 # Clase Circulo
@@ -42,13 +42,13 @@ class Circulo:
         self.centro = centro
         self.radio = radio
 
-    # Método toString
+    # MÃ©todo toString
     def __str__(self):
-        return f"Círculo con centro en {self.centro} y radio {self.radio}"
+        return f"CÃ­rculo con centro en {self.centro} y radio {self.radio}"
 
-    # Método para dibujar el círculo
+    # MÃ©todo para dibujar el cÃ­rculo
     def dibujaCirculo(self):
-        print(f"Dibujando un círculo con centro en {self.centro} y radio {self.radio}")
+        print(f"Dibujando un cÃ­rculo con centro en {self.centro} y radio {self.radio}")
 
 
 # Clase principal para probar las clases
@@ -73,6 +73,6 @@ def main():
     circulo.dibujaCirculo()
 
 
-# Ejecutar la función principal
+# Ejecutar la funciÃ³n principal
 if __name__ == "__main__":
     main()
